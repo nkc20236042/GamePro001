@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class enemyController : MonoBehaviour
 {
+    GameObject Chara;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class enemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(-0.02f, 0, 0);
+        transform.Translate(-0.08f, 0, 0);
     
     if(transform.position.x < -5.0f)
         {
