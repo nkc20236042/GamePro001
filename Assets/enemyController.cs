@@ -9,7 +9,7 @@ public class enemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        this.Chara = GameObject.Find("Chara");
     }
 
     // Update is called once per frame
@@ -21,5 +21,17 @@ public class enemyController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+    //Vector2 p1 = transform.position;
+    //    Vector2 p2 = this.Chara.transform.position;
+    //    Vector2 dir = p1 - p2;
+    //    float d = dir.magnitude;
+    //    float r1 = 1.0f;
+    //    float r2 = 1.0f;
+
+    //    if (d < r1 + r2) 
+    //    { 
+    //        Destroy (gameObject);
+    //    }
     }
 }
