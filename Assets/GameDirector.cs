@@ -12,8 +12,12 @@ public class GameDirector : MonoBehaviour
         this.timegauge = GameObject.Find("timegauge");
     }
 
-void Update()
+    void Update()
     {
         this.timegauge.GetComponent<Image>().fillAmount -= 0.0002f;
+    }
+    public void DecreaseTime()
+    {
+        this.timegauge.GetComponent<Image>().fillAmount -= 0.02f;
     }
 }
